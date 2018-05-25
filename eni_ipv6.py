@@ -1,4 +1,12 @@
 #!/usr/bin/python
+# Module for enaling IPv6 on an AWS EC2 ENI
+#
+# Example usage:
+#  - name: Enable IPv6 on the ENI
+#    eni_ipv6:
+#      region: "us-east-1"
+#      network_interface: "eni-abczyx"
+#    register: eni_ipv6
 
 from ansible.module_utils.basic import *
 import boto3
